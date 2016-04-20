@@ -13,6 +13,11 @@
 		7C45CA9D1CC5E14500D2E64A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C45CA9B1CC5E14500D2E64A /* Main.storyboard */; };
 		7C45CA9F1CC5E14500D2E64A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C45CA9E1CC5E14500D2E64A /* Assets.xcassets */; };
 		7C45CAA21CC5E14500D2E64A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C45CAA01CC5E14500D2E64A /* LaunchScreen.storyboard */; };
+		7C45CABD1CC62D1C00D2E64A /* AnimalBaseCompoite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C45CABC1CC62D1C00D2E64A /* AnimalBaseCompoite.m */; };
+		7C45CAC01CC62DA200D2E64A /* AnimalLeaf1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C45CABF1CC62DA200D2E64A /* AnimalLeaf1.m */; };
+		7C45CAC31CC6301800D2E64A /* AnimalComposite1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C45CAC21CC6301800D2E64A /* AnimalComposite1.m */; };
+		7C45CACA1CC6346300D2E64A /* AnimalComposite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C45CAC61CC6346300D2E64A /* AnimalComposite.m */; };
+		7C45CACB1CC6346300D2E64A /* AnimalLeaf.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C45CAC81CC6346300D2E64A /* AnimalLeaf.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		7C45CA9E1CC5E14500D2E64A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C45CAA11CC5E14500D2E64A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C45CAA31CC5E14500D2E64A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C45CABB1CC62D1C00D2E64A /* AnimalBaseCompoite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalBaseCompoite.h; sourceTree = "<group>"; };
+		7C45CABC1CC62D1C00D2E64A /* AnimalBaseCompoite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalBaseCompoite.m; sourceTree = "<group>"; };
+		7C45CABE1CC62DA200D2E64A /* AnimalLeaf1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalLeaf1.h; sourceTree = "<group>"; };
+		7C45CABF1CC62DA200D2E64A /* AnimalLeaf1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalLeaf1.m; sourceTree = "<group>"; };
+		7C45CAC11CC6301800D2E64A /* AnimalComposite1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalComposite1.h; sourceTree = "<group>"; };
+		7C45CAC21CC6301800D2E64A /* AnimalComposite1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalComposite1.m; sourceTree = "<group>"; };
+		7C45CAC51CC6346300D2E64A /* AnimalComposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalComposite.h; sourceTree = "<group>"; };
+		7C45CAC61CC6346300D2E64A /* AnimalComposite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalComposite.m; sourceTree = "<group>"; };
+		7C45CAC71CC6346300D2E64A /* AnimalLeaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalLeaf.h; sourceTree = "<group>"; };
+		7C45CAC81CC6346300D2E64A /* AnimalLeaf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalLeaf.m; sourceTree = "<group>"; };
+		7C45CAC91CC6346300D2E64A /* AnimalProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,8 @@
 		7C45CA911CC5E14500D2E64A /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				7C45CAC41CC6346300D2E64A /* 协议实现组合模式 */,
+				7C45CAB21CC62CF700D2E64A /* 抽象基类实现组合模式 */,
 				7C45CA951CC5E14500D2E64A /* AppDelegate.h */,
 				7C45CA961CC5E14500D2E64A /* AppDelegate.m */,
 				7C45CA981CC5E14500D2E64A /* ViewController.h */,
@@ -77,6 +95,31 @@
 				7C45CA931CC5E14500D2E64A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C45CAB21CC62CF700D2E64A /* 抽象基类实现组合模式 */ = {
+			isa = PBXGroup;
+			children = (
+				7C45CABB1CC62D1C00D2E64A /* AnimalBaseCompoite.h */,
+				7C45CABC1CC62D1C00D2E64A /* AnimalBaseCompoite.m */,
+				7C45CABE1CC62DA200D2E64A /* AnimalLeaf1.h */,
+				7C45CABF1CC62DA200D2E64A /* AnimalLeaf1.m */,
+				7C45CAC11CC6301800D2E64A /* AnimalComposite1.h */,
+				7C45CAC21CC6301800D2E64A /* AnimalComposite1.m */,
+			);
+			path = "抽象基类实现组合模式";
+			sourceTree = "<group>";
+		};
+		7C45CAC41CC6346300D2E64A /* 协议实现组合模式 */ = {
+			isa = PBXGroup;
+			children = (
+				7C45CAC51CC6346300D2E64A /* AnimalComposite.h */,
+				7C45CAC61CC6346300D2E64A /* AnimalComposite.m */,
+				7C45CAC71CC6346300D2E64A /* AnimalLeaf.h */,
+				7C45CAC81CC6346300D2E64A /* AnimalLeaf.m */,
+				7C45CAC91CC6346300D2E64A /* AnimalProtocol.h */,
+			);
+			path = "协议实现组合模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C45CACA1CC6346300D2E64A /* AnimalComposite.m in Sources */,
+				7C45CACB1CC6346300D2E64A /* AnimalLeaf.m in Sources */,
+				7C45CAC31CC6301800D2E64A /* AnimalComposite1.m in Sources */,
 				7C45CA9A1CC5E14500D2E64A /* ViewController.m in Sources */,
 				7C45CA971CC5E14500D2E64A /* AppDelegate.m in Sources */,
+				7C45CABD1CC62D1C00D2E64A /* AnimalBaseCompoite.m in Sources */,
+				7C45CAC01CC62DA200D2E64A /* AnimalLeaf1.m in Sources */,
 				7C45CA941CC5E14500D2E64A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
